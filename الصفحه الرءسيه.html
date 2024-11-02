@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الاستماع والترجمة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #60059c;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .nav {
+            background-color: #ddd;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #60059c;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        th {
+            background-color: #60059c;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        textarea {
+            width: 100%;
+            font-size: 18px;
+            margin-top: 5px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: none;
+        }
+
+        .audio-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        audio {
+            width: 80%;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 18px;
+            }
+
+            textarea {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>موقع الاستماع والترجمة</h1>
+    </div>
+
+    <nav class="nav">
+        <ul> 
+            <li><a href="الصفحه الرءسيه.html"> الرئيسية</a></li>       
+            <li><a href="#about"> </a></li>
+            <li><a href="New folder (2)/كلمات انجليزي.html">كلمات انجليزي</a></li>       
+            <li><a href="#about"> </a></li>
+            <li><a href="New folder (2)/أهم الجمل الانجليزية.html">أهم الجمل الانجليزية</a></li>
+            <li><a href="#about"> </a></li>
+            <li><a href="New folder (2)/كتب الانجليزية.html">كتب الانجليزية </a></li>
+            <li><a href="#about"> </a></li>
+            <li><a href="New folder (2)/الافعال.html">الافعال</a></li>
+        </ul>
+    </nav>
+
+    <div class="container"> 
+        <h1>Easy English</h1>
+        <p id="translatedText"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>الكلمة بالإنجليزية</th>
+                    <th>الترجمة بالعربية</th>
+                    <th>مقطع صوتي</th>
+                    <th>حفظ الكلمات</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>apple</td>
+                    <td>تفاحة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/apple.mp3   " type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>book</td>
+                    <td>كتاب</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/Book.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>computer</td>
+                    <td>حاسوب</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/computer.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>phone</td>
+                    <td>هاتف</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/phone.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>dog</td>
+                    <td>كلب</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/Doug.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>cat</td>
+                    <td>قطة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/cat.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>car</td>
+                    <td>سيارة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/car.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>house</td>
+                    <td>منزل</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/house.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>tree</td>
+                    <td>شجرة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/tree.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>table</td>
+                    <td>طاولة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/table.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>pen</td>
+                    <td>قلم</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/pen.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <!-- كلمات جديدة -->
+                <tr>
+                    <td>window</td>
+                    <td>نافذة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/window.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>door</td>
+                    <td>باب</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/door.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>shirt</td>
+                    <td>قميص</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/shirt.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>shoes</td>
+                    <td>أحذية</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/shoes.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>fish</td>
+                    <td>سمكة</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/fish.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+                <tr>
+                    <td>bird</td>
+                    <td>طائر</td>
+                    <td>
+                        <div class="audio-container">
+                            <audio controls>
+                                <source src="New folder/bird.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </td>
+                    <td><textarea rows="2" placeholder="أدخل النص هنا..."></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function translateText() {
+            // يمكن إضافة وظيفة الترجمة هنا
+        }
+    </script>
+</body>
+</html>
